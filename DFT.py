@@ -58,25 +58,3 @@ if __name__ == "__main__":
     data = DFT(data, len(data))
     data = result(data)
     write_file(data)
-
-
-
-
-
-
-# f = open('1.txt', 'r')
-# group_data = [float(x) for x in f.read().replace(',','.').split()]
-
-# X = DFT(group_data, len(group_data))#[:7][1:]
-
-# result = []
-# for i in range(len(X)):
-#    result.append(chr(int_round(cmath.sqrt(pow(X[i].real,2)+pow(X[i].imag,2)).real * 2)))
-
-
-# #X = [cmath.sqrt(pow(X[i].real,2)+pow(X[i].imag,2)) for i in range(len(group_data)-1)]
-
-# output = str("".join(result))
-# file = open("result.txt","w+")
-# file.writelines(output)
-# file.close()
